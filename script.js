@@ -17,8 +17,9 @@ document.querySelector('#cart').onclick = () =>{
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#srch').onclick = () =>{
-    searchForm.classList.toggle('active');
-    navbar.classList.remove('active');
+    searchForm.classList.toggle('show');
+    // navbar.classList.remove('active');
+    navbar.classList.hide();
     cartItem.classList.remove('active');
 }
 
