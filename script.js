@@ -14,18 +14,20 @@ document.querySelector('#cart').onclick = () =>{
     searchForm.classList.remove('active');
 }
 
-let searchForm = document.querySelector('.search-form');
-
-document.querySelector('#srch').onclick = () =>{
-    searchForm.classList.toggle('show');
-    // navbar.classList.remove('active');
-    navbar.classList.hide();
+// function myfun() {
+    let searchForm = document.querySelector('.search-form');
+    
+    document.querySelector('#srch').onclick=(req,res) =>{
+    searchForm.classList.toggle('active');
+    // searchForm.open();
+    navbar.classList.remove('active');
+    // navbar.classList.hide();
     cartItem.classList.remove('active');
 }
 
 window.onscroll = () =>{
     navbar.classList.remove('active');
-    searchForm.classList.remove('active');
+    // searchForm.classList.remove('active');
     cartItem.classList.remove('active');
     
 }
