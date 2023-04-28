@@ -125,7 +125,7 @@ z-index: 1000;
 }
 
 #menu{
-    display: none;
+    display: hidden;
 }
 
 .head .search-form{
@@ -316,8 +316,13 @@ color: var(--black);
     font-weight: lighter;
 }
 
-.menu .box-container .box .price span:hover{
+.menu .box-container .box .price span:hover {
     color: var(--black);
+}
+
+.menu .box-container .box:hover{
+    background-color: #eeeeeeea;
+    border-color: brown;
 }
 
 .menu .box-container .box:hover > *{
@@ -606,7 +611,7 @@ font-size: 2rem;
 
 @media (max-width:768px){
     #menu{
-        display: inline-block;
+        display: inline-flexbox;
     }
 
     .head .navbar{
